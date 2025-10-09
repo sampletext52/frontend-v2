@@ -1,5 +1,1 @@
-@import './styles/global/media.css';
-@import './styles/colors/colors.css';
-@import './styles/normalize.css';
-@import './styles/global/utility.css';
-@import './styles/components/container.css';
+@import url('./styles/main.css');

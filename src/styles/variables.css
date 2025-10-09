@@ -1,0 +1,24 @@
+:root {
+  --special-link-color: #fff;
+  --special-link-font-weight: 400;
+  --special-title-color: #181818;
+  --text-color: #595566;
+  --text-font-weight: 400;
+  --title-color: #181818;
+  --title-font-weight: 700;
+  --subtitle-first-color: #181818;
+  --subtitle-first-background: #FFCC4A;
+  --subtitle-radius: 20px;
+  --subtitle-second-color: #fff;
+  --subtitle-second-background: #4EAF4E;
+  --subtitle-padding: 0 10px;
+  --subtitle-font-weight: 400;
+  --button-first-color: #fff;
+  --button-first-background: #181818;
+  --button-second-color: #181818;
+  --button-second-background: #FFCC4A;
+  --button-font-weight: 600;
+  --button-radius: 42px;
+  --social-icon: 25px;
+  --icon: 80px;
+}

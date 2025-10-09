@@ -1,0 +1,91 @@
+.faq {
+  margin-bottom: 10%;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  background-color: #F5F5F5;
+}
+
+.faq__content {
+  text-align: center;
+}
+
+.faq__subtitle {
+  margin-bottom: 20px;
+}
+
+.faq__title {
+  margin-bottom: 40px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DADADA;
+}
+
+.accordion__button {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.accordion__button::before,
+.accordion__button::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  width: 20px;
+  height: 3px;
+  background-color: #181818;
+  transition: transform 0.4s;
+}
+
+.accordion__button::after {
+  transform: translateY(-50%);
+}
+
+.accordion__button::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion__button_active::before {
+  transform: translateY(-50%) rotate(0);
+}
+
+.accordion__collapse {
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.accordion__collapse_open {
+}
+
+.accordion__body {
+  padding-top: 20px;
+}
+
+.accordion__body-text {
+  max-width: 600px;
+}
+
+@media (min-width: 576px) {
+  .accordion__button::after,
+  .accordion__button::before {
+    right: 0;
+  }
+}

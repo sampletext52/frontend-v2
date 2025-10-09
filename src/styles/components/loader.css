@@ -1,0 +1,37 @@
+.loader-box {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #FFCC4A transparent;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-box_hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

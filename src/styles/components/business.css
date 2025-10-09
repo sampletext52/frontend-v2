@@ -1,0 +1,114 @@
+.business {
+  margin-bottom: 8%;
+  padding: 10% 0;
+  background-color: #F5F5F5;
+}
+
+.business__swiper {
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+.business__swiper .swiper-wrapper {
+  transition-timing-function: ease-in-out;
+}
+
+.business__swiper .swiper-button-next,
+.business__swiper .swiper-button-prev {
+  position: static;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FFC42B;
+  transition: background-color 0.4s;
+}
+
+.business__swiper .swiper-button-next:hover,
+.business__swiper .swiper-button-prev:hover {
+  background-color: #181818;
+}
+
+.business__swiper .swiper-button-next:hover::after,
+.business__swiper .swiper-button-prev:hover::after {
+  color: #fff;
+}
+
+.business__swiper .swiper-button-next::after,
+.business__swiper .swiper-button-prev::after {
+  content: "\279C";
+  color: #141414;
+  font-size: 20px;
+  transition: color 0.4s;
+}
+
+.business__swiper .swiper-button-prev::after {
+  transform: rotate(180deg);
+}
+
+.business__box {
+  max-width: 600px;
+}
+
+.business__navigation-box {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.business__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  align-items: start;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.business__item {
+  padding: 35px 25px;
+  border-radius: 20px;
+  background-color: #EBEBEB;
+  transition: background-color 0.4s;
+}
+
+.business__item:hover {
+  background-color: #181818;
+}
+
+.business__item:hover .business__title {
+  color: #fff;
+  transition: color 0.4s;
+}
+
+.business__item:hover .business__text {
+  color: #fff;
+  transition: color 0.4s;
+}
+
+.business__item:hover .business__icon {
+  fill: #FFC42B;
+}
+
+.business__item .business__icon {
+  width: 35px;
+  height: 25px;
+  margin-bottom: 25px;
+  fill: #181818;
+  transition: fill 0.4s;
+}
+
+.swiper.business__swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  transition: gap 0.4s;
+}
+
+@media (min-width: 768px) {
+  .swiper.business__swiper {
+    align-items: end;
+    gap: 0;
+  }
+}

@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -18,12 +18,12 @@ html {
 
 .page__body {
   font-size: 16px;
-  font-family: "Cabin", sans-serif;
+  font-family: Cabin, sans-serif;
   overflow-x: hidden;
 }
 
 ::selection {
-  background-color: #FFCC4A;
+  background-color: #ffcc4a;
   color: #181818;
 }
 

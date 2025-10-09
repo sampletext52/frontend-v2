@@ -59,10 +59,10 @@
   flex-shrink: 0;
   width: 100px;
   height: 100px;
-  fill: rgba(3, 2, 17, 0.5);
+  fill: rgb(3 2 17 / 50%);
 }
 
-@media (min-width: 992px) {
+@media (width >= 992px) {
   .work__wrapper {
     flex-direction: row;
     justify-content: space-between;

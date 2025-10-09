@@ -1,7 +1,7 @@
 .pricing {
   margin-bottom: 10%;
   padding: 10% 0;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .pricing__container {
@@ -33,18 +33,18 @@
 }
 
 .pricing__item {
-  padding: 20px 22px 40px 22px;
-  background-color: #FFF;
+  padding: 20px 22px 40px;
+  background-color: #fff;
   border-radius: 20px;
 }
 
 .pricing__item:hover .pricing__month {
-  background-color: #4EAF4E;
+  background-color: #4eaf4e;
   color: #fff;
 }
 
 .pricing__item:hover .pricing__btn {
-  background-color: #FFCC4A;
+  background-color: #ffcc4a;
 }
 
 .pricing__price-box {
@@ -84,22 +84,23 @@
   margin-right: 10px;
   font-size: 50px;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
 }
 
 .pricing__month {
   padding: 0 15px;
-  background-color: #3E3E3E;
+  background-color: #3e3e3e;
   border-radius: 20px;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  transition: background-color 0.4s, color 0.4s;
+  transition:
+    background-color 0.4s,
+    color 0.4s;
 }
 
 .pricing__data-list {
-  margin-bottom: 35px;
   list-style: none;
   padding: 0;
   margin-bottom: 35px;

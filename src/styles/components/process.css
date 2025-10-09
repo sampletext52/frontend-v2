@@ -76,7 +76,7 @@
   position: relative;
 }
 
-.process__icon {
+.process__icon-bg {
   position: absolute;
   bottom: -80px;
   left: 45px;
@@ -102,7 +102,7 @@
   gap: 10px;
 }
 
-@media (min-width: 992px) {
+@media (width >= 992px) {
   .process__container {
     flex-direction: row;
     justify-content: space-between;

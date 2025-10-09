@@ -28,7 +28,7 @@
   line-height: 100%;
 }
 
-@media (min-width: 1920px) {
+@media (width >= 1920px) {
   .special-title {
     font-size: 50px;
   }
@@ -43,7 +43,7 @@
   line-height: 100%;
 }
 
-@media (min-width: 1920px) {
+@media (width >= 1920px) {
   .title {
     font-size: 45px;
   }
@@ -60,7 +60,9 @@
 .text {
   margin: 0;
   color: var(--text-color);
-  font: var(--text-font-weight) Lato, sans-serif;
+  font:
+    var(--text-font-weight) Lato,
+    sans-serif;
 }
 
 .black-link {
@@ -69,13 +71,17 @@
   color: var(--button-first-color);
   background-color: var(--button-first-background);
   border-radius: var(--button-radius);
-  font: var(--button-font-weight) 18px Lato, sans-serif;
-  border: 2px solid rgb(24, 24, 24);
-  transition: background-color 0.4s, color 0.4s;
+  font:
+    var(--button-font-weight) 18px Lato,
+    sans-serif;
+  border: 2px solid rgb(24 24 24);
+  transition:
+    background-color 0.4s,
+    color 0.4s;
 }
 
 .black-link:hover {
-  background-color: #FFFFFF;
+  background-color: #fff;
   color: #181818;
 }
 
@@ -85,13 +91,17 @@
   color: var(--button-second-color);
   background-color: var(--button-second-background);
   border-radius: var(--button-radius);
-  font: var(--button-font-weight) 18px Lato, sans-serif;
-  transition: background-color 0.4s, color 0.4s;
+  font:
+    var(--button-font-weight) 18px Lato,
+    sans-serif;
+  transition:
+    background-color 0.4s,
+    color 0.4s;
 }
 
 .yellow-link:hover {
   background-color: #181818;
-  color: #FFF;
+  color: #fff;
 }
 
 .black-button {
@@ -99,7 +109,9 @@
   color: var(--button-first-color);
   background-color: var(--button-first-background);
   border-radius: var(--button-radius);
-  font: var(--button-font-weight) 18px Lato, sans-serif;
+  font:
+    var(--button-font-weight) 18px Lato,
+    sans-serif;
 }
 
 .yellow-button {
@@ -107,23 +119,27 @@
   color: var(--button-second-color);
   background-color: var(--button-second-background);
   border-radius: var(--button-radius);
-  font: var(--button-font-weight) 18px Lato, sans-serif;
+  font:
+    var(--button-font-weight) 18px Lato,
+    sans-serif;
 }
 
 .special-link {
   text-decoration: none;
   color: var(--special-link-color);
-  font: var(--special-link-font-weight) 18px Lato, sans-serif;
+  font:
+    var(--special-link-font-weight) 18px Lato,
+    sans-serif;
 }
 
 .special-link::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 8px;
   height: 8px;
   margin-right: 8px;
   vertical-align: middle;
-  border: 0.98px solid rgb(81, 81, 81);
+  border: 0.98px solid rgb(81 81 81);
   background-color: transparent;
   border-radius: 50%;
 }
@@ -134,7 +150,9 @@
   color: var(--subtitle-first-color);
   background-color: var(--subtitle-first-background);
   border-radius: var(--subtitle-radius);
-  font: var(--subtitle-font-weight) Lato, sans-serif;
+  font:
+    var(--subtitle-font-weight) Lato,
+    sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -145,7 +163,9 @@
   color: var(--subtitle-second-color);
   background-color: var(--subtitle-second-background);
   border-radius: var(--subtitle-radius);
-  font: var(--subtitle-font-weight) Lato, sans-serif;
+  font:
+    var(--subtitle-font-weight) Lato,
+    sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }

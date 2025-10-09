@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   padding: 8px 40px 8px 10px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-radius: 42px;
 }
 
@@ -45,7 +45,7 @@
   margin-right: 10px;
   padding: 10px;
   border-radius: 50%;
-  background-color: #FFC42B;
+  background-color: #ffc42b;
 }
 
 .nav__phone-icon {
@@ -64,14 +64,14 @@
 }
 
 .nav__link_active {
-  color: #5AB612;
+  color: #5ab612;
 }
 
 .nav__link_active::before {
-  background-color: #5AB612;
+  background-color: #5ab612;
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .nav {
     position: static;
     height: 0;

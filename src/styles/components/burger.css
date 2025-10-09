@@ -3,7 +3,8 @@
   --height: 30px;
   --height-line: 4px;
   --center: calc((var(--height) / 2) - (var(--height-line) / 2));
-  --center-: calc((var(--height) / -2) - (var(--height-line) / -2));
+  --center-negative: calc((var(--height) / -2) - (var(--height-line) / -2));
+
   position: relative;
   z-index: 10;
   display: inline-flex;
@@ -16,7 +17,7 @@
 .burger__line {
   height: var(--height-line);
   width: 100%;
-  background-color: #FFCC4A;
+  background-color: #ffcc4a;
   transition: transform 0.7s ease 0s;
 }
 
@@ -29,10 +30,10 @@
 }
 
 .burger_active .burger__line:nth-child(3) {
-  transform: translateY(var(--center-)) rotate(-45deg);
+  transform: translateY(var(--center-negative)) rotate(-45deg);
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .burger {
     display: none;
   }

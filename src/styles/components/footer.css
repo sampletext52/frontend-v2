@@ -1,8 +1,7 @@
 .footer {
   padding-top: 10%;
   padding-bottom: 30px;
-  background-image: url("/src/assets/images/footerBg.jpeg");
-  background-image: image-set(url("/src/assets/images/footerBg.webp"), url("/src/assets/images/footerBg.webp"));
+  background-image: url('/src/assets/images/footerBg.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,14 +59,14 @@
 }
 
 .footer__title::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 30px;
   height: 3px;
   border-radius: 20px;
-  background-color: #FFCC4A;
+  background-color: #ffcc4a;
 }
 
 .footer__sublist {

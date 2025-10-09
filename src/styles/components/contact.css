@@ -56,7 +56,7 @@
 }
 
 .contact__item:nth-child(3) .contact__icon-box {
-  background-color: #eaeaea;
+  background-color: var(--bg-tertiary);
 }
 
 .contact__icon {
@@ -76,7 +76,7 @@
 
 .contact__item:nth-child(3) .contact__icon {
   fill: transparent;
-  stroke: #181818;
+  stroke: var(--text-primary);
 }
 
 .contact__contact-box {
@@ -87,14 +87,14 @@
   margin-bottom: 5px;
   font-family: Lato, sans-serif;
   font-weight: 400;
-  color: #595566;
+  color: var(--text-color);
 }
 
 .contact__link {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
-  color: #181818;
+  color: var(--text-primary);
 }
 
 .contact__strong {
@@ -102,7 +102,7 @@
   max-width: 260px;
   font-size: 20px;
   font-weight: 600;
-  color: #181818;
+  color: var(--text-primary);
 }
 
 .contact__form {
@@ -119,47 +119,60 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #181818;
+  color: var(--text-primary);
 }
 
 .form__input {
   padding: 20px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid var(--border-color);
   border-radius: 54px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .form__input::placeholder {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  color: #181818;
+  color: var(--text-muted);
 }
 
 .form__textarea {
   height: 150px;
   margin-bottom: 30px;
   padding: 10px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid var(--border-color);
   border-radius: 20px;
   outline: none;
   resize: none;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .form__textarea::placeholder {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  color: #181818;
+  color: var(--text-muted);
 }
 
 .form__btn {
-  border: 1px solid #c1c1c1;
+  border: 1px solid var(--border-color);
   transition:
     background-color 0.4s,
-    color 0.4s;
+    color 0.4s,
+    border-color 0.3s ease;
 }
 
 .form__btn:hover {
-  background-color: #fff;
-  color: #181818;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 @media (width >= 768px) {

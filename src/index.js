@@ -1,5 +1,6 @@
 import './accordion.js';
 import './swiper.js';
+import './theme-toggle.js';
 
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');

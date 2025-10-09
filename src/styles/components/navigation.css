@@ -5,8 +5,10 @@
   top: -100rem;
   z-index: 1;
   height: calc(100vh - 100px);
-  background-color: #000;
-  transition: top 1s;
+  background-color: var(--bg-primary);
+  transition:
+    top 1s,
+    background-color 0.3s ease;
   overflow: auto;
 }
 

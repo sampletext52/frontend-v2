@@ -6,6 +6,7 @@
 @import './components/header.css';
 @import './components/navigation.css';
 @import './components/burger.css';
+@import './components/theme-toggle.css';
 @import './components/hero.css';
 @import './components/services.css';
 @import './components/business.css';

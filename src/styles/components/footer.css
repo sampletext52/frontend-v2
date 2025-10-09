@@ -5,6 +5,20 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--overlay);
+  z-index: 1;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 2;
 }
 
 .footer__wrapper {
@@ -13,13 +27,13 @@
   justify-content: space-between;
   gap: 30px;
   padding-bottom: 55px;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .footer__content {
   max-width: 350px;
   padding-right: 10%;
-  border-right: 1px solid #707070;
+  border-right: 1px solid var(--border-color);
 }
 
 .footer__logo {

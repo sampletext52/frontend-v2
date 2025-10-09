@@ -1,7 +1,8 @@
 .business {
   margin-bottom: 8%;
   padding: 10% 0;
-  background-color: #f5f5f5;
+  background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .business__swiper {
@@ -68,21 +69,21 @@
 .business__item {
   padding: 35px 25px;
   border-radius: 20px;
-  background-color: #ebebeb;
+  background-color: var(--bg-tertiary);
   transition: background-color 0.4s;
 }
 
 .business__item:hover {
-  background-color: #181818;
+  background-color: var(--text-primary);
 }
 
 .business__item:hover .business__title {
-  color: #fff;
+  color: var(--bg-primary);
   transition: color 0.4s;
 }
 
 .business__item:hover .business__text {
-  color: #fff;
+  color: var(--bg-primary);
   transition: color 0.4s;
 }
 
@@ -94,8 +95,19 @@
   width: 35px;
   height: 25px;
   margin-bottom: 25px;
-  fill: #181818;
+  fill: var(--text-primary);
   transition: fill 0.4s;
+}
+
+.business__title {
+  color: var(--title-color);
+  margin-bottom: 15px;
+  transition: color 0.4s;
+}
+
+.business__text {
+  color: var(--text-color);
+  transition: color 0.4s;
 }
 
 .swiper.business__swiper {

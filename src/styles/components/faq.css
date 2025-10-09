@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   padding: 10%;
-  background-color: #f5f5f5;
+  background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .faq__content {
@@ -30,7 +31,7 @@
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .accordion__button {
@@ -51,7 +52,7 @@
   top: 10px;
   width: 20px;
   height: 3px;
-  background-color: #181818;
+  background-color: var(--text-primary);
   transition: transform 0.4s;
 }
 

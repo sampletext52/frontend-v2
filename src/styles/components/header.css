@@ -3,6 +3,11 @@
   z-index: 10;
   backdrop-filter: blur(21px);
   background-color: rgb(27 27 27 / 91%);
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .header {
+  background-color: rgb(26 26 26 / 95%);
 }
 
 .header::after {
@@ -12,6 +17,11 @@
   z-index: 9;
   display: block;
   background-color: #1b1b1b;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .header::after {
+  background-color: #1a1a1a;
 }
 
 .header__container {

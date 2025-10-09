@@ -28,7 +28,7 @@ class Swiper {
   }
   
   setupSlides() {
-    this.slides.forEach((slide, index) => {
+    this.slides.forEach((slide) => {
       slide.style.flex = `0 0 ${100 / this.options.slidesPerView}%`;
       slide.style.marginRight = `${this.options.spaceBetween}px`;
     });

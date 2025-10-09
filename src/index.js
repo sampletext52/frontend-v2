@@ -52,11 +52,11 @@ function navBar() {
 navBar();
 
 const loaderBox = document.querySelector(".loader-box");
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
     loaderBox.classList.add("loader-box_hidden");
 });
 
-if (HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules")) {
+if (window.HTMLScriptElement && window.HTMLScriptElement.supports && window.HTMLScriptElement.supports("speculationrules")) {
     const specScript = document.createElement("script");
     specScript.type = "speculationrules";
     const specRules = {

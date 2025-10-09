@@ -2,8 +2,8 @@ class Accordion {
   constructor(accordionElem, options) {
     let defaultOptions = {
       speed: 500,
-      turn: false
-    }
+      turn: false,
+    };
     this.accordion = document.querySelector(`[data-accordion="${accordionElem}"]`);
     this.options = Object.assign(defaultOptions, options);
     this.allAccordionCollapse = this.accordion.querySelectorAll('.accordion__collapse');
@@ -15,13 +15,13 @@ class Accordion {
   }
 
   initialize() {
-    this.allAccordionCollapse.forEach(collapseElement => {
+    this.allAccordionCollapse.forEach((collapseElement) => {
       collapseElement?.setAttribute('id', 'accordion__collapse');
       collapseElement.hidden = true;
       collapseElement.classList.contains('accordion__collapse_open') && this.toggleSlide(collapseElement);
     });
 
-    this.allAccordionButton.forEach(buttonElement => {
+    this.allAccordionButton.forEach((buttonElement) => {
       buttonElement.setAttribute('aria-expanded', 'false');
       buttonElement.setAttribute('aria-controls', 'accordion__collapse');
     });
@@ -56,7 +56,7 @@ class Accordion {
         element.classList.remove('collapse');
       }, this.options.speed);
     }
-  };
+  }
 
   showElement(element) {
     if (element && !element.classList.contains('collapse')) {
@@ -88,7 +88,7 @@ class Accordion {
         element.classList.remove('collapse');
       }, this.options.speed);
     }
-  };
+  }
 
   toggleSlide(collapseElement) {
     collapseElement?.hidden ? this.showElement(collapseElement) : this.hideElement(collapseElement);
@@ -102,8 +102,8 @@ class Accordion {
       this.toggleSlide(accordionCollapse);
 
       if (accordionCollapse?.classList.contains('accordion__collapse_open') && this.options.turn) {
-        this.allAccordionCollapse.forEach(collapseElement => this.hideElement(collapseElement));
-        accordionCollapse.hidden = false
+        this.allAccordionCollapse.forEach((collapseElement) => this.hideElement(collapseElement));
+        accordionCollapse.hidden = false;
       }
     });
   }
@@ -114,7 +114,7 @@ function initAccordion() {
   if (accordionContainer) {
     new Accordion('accordion1', {
       turn: true,
-      speed: 500
+      speed: 500,
     });
   }
 }

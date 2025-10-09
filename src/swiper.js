@@ -9,56 +9,56 @@ class Swiper {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      ...options
+      ...options,
     };
-    
+
     this.currentIndex = 0;
     this.slides = this.container.querySelectorAll('.swiper-slide');
     this.wrapper = this.container.querySelector('.swiper-wrapper');
     this.nextButton = this.container.querySelector(this.options.navigation.nextEl);
     this.prevButton = this.container.querySelector(this.options.navigation.prevEl);
-    
+
     this.init();
   }
-  
+
   init() {
     this.setupSlides();
     this.setupNavigation();
     this.updateSlides();
   }
-  
+
   setupSlides() {
     this.slides.forEach((slide) => {
       slide.style.flex = `0 0 ${100 / this.options.slidesPerView}%`;
       slide.style.marginRight = `${this.options.spaceBetween}px`;
     });
-    
+
     this.wrapper.style.transition = 'transform 0.3s ease-in-out';
     this.wrapper.style.display = 'flex';
   }
-  
+
   setupNavigation() {
     if (this.nextButton) {
       this.nextButton.addEventListener('click', () => this.next());
     }
-    
+
     if (this.prevButton) {
       this.prevButton.addEventListener('click', () => this.prev());
     }
   }
-  
+
   updateSlides() {
     const translateX = -this.currentIndex * (100 / this.options.slidesPerView);
     this.wrapper.style.transform = `translateX(${translateX}%)`;
   }
-  
+
   next() {
     if (this.currentIndex < this.slides.length - this.options.slidesPerView) {
       this.currentIndex++;
       this.updateSlides();
     }
   }
-  
+
   prev() {
     if (this.currentIndex > 0) {
       this.currentIndex--;
@@ -76,7 +76,7 @@ function initSwiper() {
       navigation: {
         nextEl: '.business__swiper .swiper-button-next',
         prevEl: '.business__swiper .swiper-button-prev',
-      }
+      },
     });
   }
 }

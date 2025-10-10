@@ -16,7 +16,6 @@
   margin-left: 0;
   padding: 40px 35px;
   border-radius: 29px;
-  backdrop-filter: blur(11px);
   background-color: rgb(255 255 255 / 85%);
   transition:
     background-color 0.3s ease,

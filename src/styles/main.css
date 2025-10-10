@@ -2,7 +2,6 @@
 @import './reset.css';
 @import './fonts.css';
 @import './utilities.css';
-@import './components/loader.css';
 @import './components/header.css';
 @import './components/navigation.css';
 @import './components/burger.css';

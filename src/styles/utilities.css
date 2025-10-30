@@ -1,7 +1,33 @@
 .container {
-  max-width: 1230px;
-  padding: 0 15px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 12px;
+  max-width: 100%;
+}
+
+@media (width >= 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (width >= 1312px) {
+  .container {
+    max-width: 1312px;
+  }
 }
 
 .logo {

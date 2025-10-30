@@ -128,3 +128,27 @@
   color: #fff;
   text-align: center;
 }
+
+@media (width < 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer__content {
+    max-width: 100%;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .footer__list {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px 40px;
+  }
+
+  .footer__text {
+    max-width: 100%;
+  }
+}

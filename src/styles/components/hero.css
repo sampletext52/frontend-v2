@@ -39,3 +39,13 @@
     margin-left: 200px;
   }
 }
+
+@media (width < 576px) {
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero__content {
+    padding: 24px 20px;
+  }
+}

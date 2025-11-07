@@ -76,15 +76,12 @@
 }
 
 .small-title {
-  margin: 0;
-  margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 600;
   font-size: 20px;
 }
 
 .text {
-  margin: 0;
   color: var(--text-color);
   font:
     var(--text-font-weight) Lato,

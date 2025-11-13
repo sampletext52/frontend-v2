@@ -1,92 +1,60 @@
-.faq {
-  margin-bottom: 10%;
-}
-
 .faq__container {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 40px;
   align-items: center;
-  padding: 10%;
-  background-color: var(--bg-secondary);
   transition: background-color 0.3s ease;
-}
-
-.faq__content {
-  text-align: center;
+  background-color: var(--bg-secondary);
+  border-radius: 30px;
+  padding: 150px 0;
 }
 
 .faq__subtitle {
-  margin-bottom: 20px;
+  width: fit-content;
+  padding: var(--subtitle-padding);
+  color: var(--subtitle-second-color);
+  background-color: var(--subtitle-second-background);
+  border-radius: var(--subtitle-radius);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 24px;
 }
 
 .faq__title {
-  margin-bottom: 40px;
+  margin: 0;
+  color: var(--title-color);
+  font-size: 45px;
+  font-weight: var(--title-font-weight);
 }
 
-.accordion {
-  width: 100%;
-}
-
-.accordion__item {
-  position: relative;
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.accordion__button {
-  position: relative;
-  width: 100%;
-  text-align: left;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.accordion__button::before,
-.accordion__button::after {
-  content: '';
-  position: absolute;
-  right: -20px;
-  top: 10px;
-  width: 20px;
-  height: 3px;
-  background-color: var(--text-primary);
-  transition: transform 0.4s;
-}
-
-.accordion__button::after {
-  transform: translateY(-50%);
-}
-
-.accordion__button::before {
-  transform: translateY(-50%) rotate(90deg);
-}
-
-.accordion__button_active::before {
-  transform: translateY(-50%) rotate(0);
-}
-
-.accordion__collapse {
-  overflow: hidden;
-  transition: height 0.5s ease;
-}
-
-.accordion__collapse_open {
-}
-
-.accordion__body {
-  padding-top: 20px;
-}
-
-.accordion__body-text {
-  max-width: 600px;
-}
-
-@media (width >= 576px) {
-  .accordion__button::after,
-  .accordion__button::before {
-    right: 0;
+@media (--bp-sm) {
+  .faq__container {
+    max-width: 576px;
   }
+}
+
+@media (--bp-lg-wide) {
+  .faq__container {
+    max-width: 1024px;
+  }
+}
+
+@media (--bp-xxl) {
+  .faq__container {
+    max-width: 1312px;
+  }
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.faq__accordion {
+  width: 100%;
+  max-width: 725px;
 }

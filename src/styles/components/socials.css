@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+}
+
+.socials__icon {
+  fill: var(--color-white);
+  width: 27px;
+  height: 25px;
+}
+
+.socials__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+/* Модификаторы для использования в разных блоках */
+.socials--header {
+  gap: 25px;
+}
+
+.socials--footer {
+  gap: 20px;
+}
+

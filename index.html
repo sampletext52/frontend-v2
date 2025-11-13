@@ -1,544 +1,472 @@
 <!doctype html>
 <html class="page" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/vite.svg" type="image/x-icon" />
-    <title>Ask Experts - Service Details</title>
-    <link rel="stylesheet" href="/src/index.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/vite.svg" type="image/x-icon" />
+  <title>Ask Experts - Service Details</title>
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
 
-  <body class="page__body">
-    <header class="header">
-      <div class="header__contact-box">
-        <div class="header__time-box">
-          <svg class="header__icon">
-            <use xlink:href="/src/assets/icons/sprite.svg#time" />
-          </svg>
-          <span class="header__text"> Monday - Friday8AM - 9PM </span>
+<body class="page__body">
+<header class="header">
+  <div class="header__contact-box">
+    <div class="header__time-box">
+      <svg class="header__icon">
+        <use xlink:href="/src/assets/icons/sprite.svg#time" />
+      </svg>
+      <span class="header__text">Monday - Friday 8AM - 9PM</span>
+    </div>
+    <div class="header__address">
+      <svg class="header__icon">
+        <use xlink:href="/src/assets/icons/sprite.svg#location" />
+      </svg>
+      <span class="header__text">725 Park Ave, New York</span>
+    </div>
+    <div class="socials socials--header">
+      <a class="socials__link" href="#">
+        <svg class="socials__icon">
+          <use xlink:href="/src/assets/icons/sprite.svg#Instagram" />
+        </svg>
+      </a>
+      <a class="socials__link" href="#">
+        <svg class="socials__icon">
+          <use xlink:href="/src/assets/icons/sprite.svg#Facebook" />
+        </svg>
+      </a>
+      <a class="socials__link" href="#">
+        <svg class="socials__icon">
+          <use xlink:href="/src/assets/icons/sprite.svg#Twitter" />
+        </svg>
+      </a>
+      <a class="socials__link" href="#">
+        <svg class="socials__icon">
+          <use xlink:href="/src/assets/icons/sprite.svg#Linked-In" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="header__container">
+    <a class="logo" href="index.html">
+      <svg class="logo__icon">
+        <use xlink:href="/src/assets/icons/sprite.svg#Logo" />
+      </svg>
+      <strong class="logo__text">AskExperts</strong>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#">Services</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Our Team</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Contact</a>
+        </li>
+        <li class="nav__item nav__item--phone">
+          <div class="nav__icon-box">
+            <svg class="nav__phone-icon">
+              <use xlink:href="/src/assets/icons/sprite.svg#phone" />
+            </svg>
+          </div>
+          <a class="nav__phone-link" href="tel:+8884521505">+ (888) 452 1505</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger button-reset" type="button" aria-label="Toggle menu">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+<main class="main">
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <span class="hero__subtitle">Service single</span>
+        <h1 class="hero__title hero__title--special">Services Details</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="business">
+    <div class="business__container">
+      <div class="business__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="business__slide swiper-slide">
+            <div class="business__box">
+              <svg class="business__icon">
+                <use xlink:href="/src/assets/icons/sprite.svg#FinancialProjections" />
+              </svg>
+              <h2 class="business__title">Financial Projections</h2>
+              <p class="business__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="business__slide swiper-slide">
+            <div class="business__box">
+              <svg class="business__icon">
+                <use xlink:href="/src/assets/icons/sprite.svg#FinanceRestructuring" />
+              </svg>
+              <h2 class="business__title">Finance & Restructuring</h2>
+              <p class="business__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="business__slide swiper-slide">
+            <div class="business__box">
+              <svg class="business__icon">
+                <use xlink:href="/src/assets/icons/sprite.svg#FundsAndInvestments" />
+              </svg>
+              <h2 class="business__title">Funds and Investments</h2>
+              <p class="business__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="header__address">
-          <svg class="header__icon">
-            <use xlink:href="/src/assets/icons/sprite.svg#location" />
-          </svg>
-          <span class="header__text"> 725 Park Ave, New York </span>
-        </div>
-        <div class="header__socials">
-          <a class="header__social-link" href="#">
-            <svg class="header__social-icon social-icon">
-              <use xlink:href="/src/assets/icons/sprite.svg#Instagram" />
-            </svg>
-          </a>
-          <a class="header__social-link" href="#">
-            <svg class="header__social-icon social-icon">
-              <use xlink:href="/src/assets/icons/sprite.svg#Facebook" />
-            </svg>
-          </a>
-          <a class="header__social-link" href="#">
-            <svg class="header__social-icon social-icon">
-              <use xlink:href="/src/assets/icons/sprite.svg#Twitter" />
-            </svg>
-          </a>
-          <a class="header__social-link" href="#">
-            <svg class="header__social-icon social-icon">
-              <use xlink:href="/src/assets/icons/sprite.svg#Linked-In" />
-            </svg>
-          </a>
+        <div class="business__navigation-box">
+          <div class="business__nav business__nav--prev swiper-button-prev" aria-label="Previous slide"></div>
+          <div class="business__nav business__nav--next swiper-button-next" aria-label="Next slide"></div>
         </div>
       </div>
-      <div class="header__container container">
-        <a class="header__logo logo" href="index.html">
-          <svg class="header__logo-icon">
+      <ul class="business__list list-reset">
+        <li class="business__item">
+          <svg class="business__icon">
+            <use xlink:href="/src/assets/icons/sprite.svg#Balance" />
+          </svg>
+          <h3 class="business__title">The Balance Sheet</h3>
+          <p class="business__text">
+            The Balance Sheet is a summary of the assets and liabilities and equity of a business at a specific
+            point of time.
+          </p>
+        </li>
+        <li class="business__item">
+          <svg class="business__icon">
+            <use xlink:href="/src/assets/icons/sprite.svg#banking" />
+          </svg>
+          <h3 class="business__title">Income Statement</h3>
+          <p class="business__text">
+            The Income (Profit and Loss) Statement, commonly referred to as the P&L statement, summarizes the
+            revenue and expenses for a specific time period (one month, one quarter, one year, etc.)
+          </p>
+        </li>
+        <li class="business__item">
+          <svg class="business__icon">
+            <use xlink:href="/src/assets/icons/sprite.svg#FinancialPlan" />
+          </svg>
+          <h3 class="business__title">Financial Plan</h3>
+          <p class="business__text">
+            Keep your information current and review the documents on a regular basis (monthly or more often if
+            needed). Review them with key individuals within your company.
+          </p>
+        </li>
+        <li class="business__item">
+          <svg class="business__icon">
+            <use xlink:href="/src/assets/icons/sprite.svg#FinancialRatios" />
+          </svg>
+          <h3 class="business__title">Financial Ratios</h3>
+          <p class="business__text">
+            Ratios are useful when comparing your company with the competition on financial performance and also
+            when benchmarking the performance of your company.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="work__container">
+      <div class="work__wrapper">
+        <picture class="work__picture">
+          <source srcset="/src/assets/images/workImg.webp" type="image/webp" />
+          <img class="work__img" src="/src/assets/images/workImg.jpeg" alt="Team working together" />
+        </picture>
+        <div class="work__content">
+          <span class="work__subtitle">We'll Work With You</span>
+          <h3 class="work__title">What To Expect</h3>
+          <p class="work__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+          </p>
+          <div class="work__text-box">
+            <svg class="work__icon">
+              <use xlink:href="/src/assets/icons/sprite.svg#success" />
+            </svg>
+            <p class="work__short-text">
+              Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day.
+            </p>
+          </div>
+          <div class="work__text-box">
+            <svg class="work__icon">
+              <use xlink:href="/src/assets/icons/sprite.svg#success" />
+            </svg>
+            <p class="work__short-text">
+              Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the
+              digital.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work__brand-box">
+        <svg class="work__brand">
+          <use xlink:href="/src/assets/icons/sprite.svg#studioGreen" />
+        </svg>
+        <svg class="work__brand">
+          <use xlink:href="/src/assets/icons/sprite.svg#Norto" />
+        </svg>
+        <svg class="work__brand">
+          <use xlink:href="/src/assets/icons/sprite.svg#points" />
+        </svg>
+        <svg class="work__brand">
+          <use xlink:href="/src/assets/icons/sprite.svg#OutOfTheSandBox" />
+        </svg>
+        <svg class="work__brand">
+          <use xlink:href="/src/assets/icons/sprite.svg#Brand" />
+        </svg>
+        <svg class="work__brand">
+          <use xlink:href="/src/assets/icons/sprite.svg#fortne" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="history__container">
+      <div class="history__content">
+        <span class="history__subtitle">Our History</span>
+        <h3 class="history__title">Strategy for Every Stage in the Client's Journey</h3>
+      </div>
+      <div class="history__box">
+        <img class="history__pattern" src="/src/assets/images/Pattern.png" alt="Decorative pattern" />
+        <div class="history__bg">
+          <button class="history__play-button button-reset" type="button" aria-label="Play video">
+            <svg class="history__play-icon">
+              <use xlink:href="/src/assets/icons/sprite.svg#PlayButton" />
+            </svg>
+          </button>
+        </div>
+        <svg class="history__background-green-icon">
+          <use xlink:href="/src/assets/icons/sprite.svg#GreenBackground" />
+        </svg>
+        <span class="history__background-yellow-icon"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="process__container">
+      <div class="process__content">
+        <span class="process__subtitle">Process</span>
+        <h3 class="process__title">Contact Us. It's Easy.</h3>
+        <p class="process__description">
+          Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+          corporate strategy foster collaborative.
+        </p>
+        <ul class="process__steps list-reset">
+          <li class="process__step">
+            <div class="process__step-icon">
+              <svg class="process__icon">
+                <use xlink:href="/src/assets/icons/sprite.svg#phone" />
+              </svg>
+            </div>
+            <div class="process__step-content">
+              <span class="process__step-label">Call Today</span>
+              <a class="process__step-link" href="tel:+1800100900">+1 800 100 900</a>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-icon">
+              <svg class="process__icon">
+                <use xlink:href="/src/assets/icons/sprite.svg#time" />
+              </svg>
+            </div>
+            <div class="process__step-content">
+              <span class="process__step-label">Monday To Friday</span>
+              <strong class="process__step-value">9AM - 5PM</strong>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-icon">
+              <svg class="process__icon">
+                <use xlink:href="/src/assets/icons/sprite.svg#location" />
+              </svg>
+            </div>
+            <div class="process__step-content">
+              <span class="process__step-label">USA Office</span>
+              <strong class="process__step-value">195 Devonshire St Boston, MA 02110</strong>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="process__media">
+        <img src="/src/assets/images/processGalery.png" alt="processGalery">
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="faq__container">
+      <div class="faq__content">
+        <span class="faq__subtitle">FAQ</span>
+        <h3 class="faq__title">Customer Questions</h3>
+      </div>
+      <div class="faq__accordion accordion" data-accordion="accordion1">
+        <div class="accordion__item">
+          <button class="accordion__button button-reset" type="button">
+            What will happen when I've sent my application?
+          </button>
+          <div class="accordion__collapse">
+            <div class="accordion__body">
+              <p class="accordion__body-text">
+                Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
+                on excellent productivity, customer satisfaction, respect for team and individual achievements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__button button-reset" type="button">
+            Can I get a free trial before I purchase?
+          </button>
+          <div class="accordion__collapse accordion__collapse--open">
+            <div class="accordion__body">
+              <p class="accordion__body-text">
+                Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
+                on excellent productivity, customer satisfaction, respect for team and individual achievements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__button button-reset" type="button">
+            What should I include in my personal statement?
+          </button>
+          <div class="accordion__collapse">
+            <div class="accordion__body">
+              <p class="accordion__body-text">
+                Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
+                on excellent productivity, customer satisfaction, respect for team and individual achievements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__button button-reset" type="button">
+            Will membership plans be charged automatically?
+          </button>
+          <div class="accordion__collapse">
+            <div class="accordion__body">
+              <p class="accordion__body-text">
+                Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
+                on excellent productivity, customer satisfaction, respect for team and individual achievements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <a class="logo" href="index.html">
+          <svg class="logo__icon">
             <use xlink:href="/src/assets/icons/sprite.svg#Logo" />
           </svg>
-          <strong class="header__logo-text"> AskExperts </strong>
+          <strong class="logo__text">AskExperts</strong>
         </a>
-        <nav class="header__nav nav">
-          <ul class="nav__list list-reset">
-            <li class="nav__item">
-              <a class="nav__link special-link" href="index.html"> Home </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link special-link" href="#"> about </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link special-link nav__link_active" href="#"> Services </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link special-link" href="#"> Our team </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link special-link" href="#"> blog </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link special-link" href="#"> Contact </a>
-            </li>
-            <li class="nav__item nav__item_phone">
-              <div class="nav__icon-box">
-                <svg class="nav__phone-icon">
-                  <use xlink:href="/src/assets/icons/sprite.svg#phone" />
-                </svg>
-              </div>
-              <a class="nav__link-phone" href="tel:+8884521505"> + (888) 452 1505 </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header__burger burger button-reset">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
+        <div class="socials socials--footer">
+          <a class="socials__link" href="#">Fb./</a>
+          <a class="socials__link" href="#">Ig./</a>
+          <a class="socials__link" href="#">Tw./</a>
+          <a class="socials__link" href="#">Be.</a>
+        </div>
       </div>
-    </header>
-
-    <main class="main">
-      <div class="main__overlay"></div>
-
-      <section
-        class="hero"
-        style="
-          background-image: url(/src/assets/images/servicesSingelBg.jpeg);
-          background-image: image-set(url(/src/assets/images/servicesSingelBg.webp) type('image/webp'));
-        "
-      >
-        <div class="hero__container container">
-          <div class="hero__content">
-            <span class="hero__subtitle first-subtitle"> Service single </span>
-            <h1 class="hero__title special-title">Services Details</h1>
-          </div>
-        </div>
-      </section>
-
-      <section class="business">
-        <div class="business__container container">
-          <div class="swiper business__swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="business__box">
-                  <svg class="business__icon icon">
-                    <use xlink:href="/src/assets/icons/sprite.svg#FinancialProjections" />
-                  </svg>
-                  <h2 class="business__title title">Financial Projections</h2>
-                  <p class="business__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="business__box">
-                  <svg class="business__icon icon">
-                    <use xlink:href="/src/assets/icons/sprite.svg#FinanceRestructuring" />
-                  </svg>
-                  <h2 class="business__title title">Finance & Restructuring</h2>
-                  <p class="business__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="business__box">
-                  <svg class="business__icon icon">
-                    <use xlink:href="/src/assets/icons/sprite.svg#FundsAndInvestments" />
-                  </svg>
-                  <h2 class="business__title title">Funds and investments</h2>
-                  <p class="business__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="business__navigation-box">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-          <ul class="business__list list-reset">
-            <li class="business__item">
-              <svg class="business__icon icon">
-                <use xlink:href="/src/assets/icons/sprite.svg#Balance" />
-              </svg>
-              <h3 class="business__title small-title">The Balance Sheet</h3>
-              <p class="business__text text">
-                The Balance Sheet is a summary of the assets and liabilities and equity of a business at a specific
-                point of time.
-              </p>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__title">Product</h3>
+          <ul class="footer__sublist list-reset">
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Service</a>
             </li>
-            <li class="business__item">
-              <svg class="business__icon icon">
-                <use xlink:href="/src/assets/icons/sprite.svg#banking" />
-              </svg>
-              <h3 class="business__title small-title">Income Statement</h3>
-              <p class="business__text text">
-                The Income (Profit and Loss) Statement, commonly referred to as the P&L statement, summarizes the
-                revenue and expenses for a specific time period (one month, one quarter, one year, etc.)
-              </p>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">FAQ</a>
             </li>
-            <li class="business__item">
-              <svg class="business__icon icon">
-                <use xlink:href="/src/assets/icons/sprite.svg#FinancialPlan" />
-              </svg>
-              <h3 class="business__title small-title">Financial Plan</h3>
-              <p class="business__text text">
-                Keep your information current and review the documents on a regular basis (monthly or more often if
-                needed). Review them with key individuals within your company.
-              </p>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Single Service</a>
             </li>
-            <li class="business__item">
-              <svg class="business__icon icon">
-                <use xlink:href="/src/assets/icons/sprite.svg#FinancialRatios" />
-              </svg>
-              <h3 class="business__title small-title">Financial Ratios</h3>
-              <p class="business__text text">
-                Ratios are useful when comparing your company with the competition on financial performance and also
-                when benchmarking the performance of your company.
-              </p>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Get Quote</a>
+            </li>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Prices</a>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <section class="work">
-        <div class="work__container container">
-          <div class="work__wrapper">
-            <picture class="work__picture">
-              <source srcset="/src/assets/images/workImg.webp" type="image/webp" />
-              <img class="work__img img" src="/src/assets/images/workImg.jpeg" alt="group-work" />
-            </picture>
-            <div class="work__content">
-              <span class="work__subtitle first-subtitle"> WE'LL WORK WITH YOU </span>
-              <h3 class="work__title title">What To Expect</h3>
-              <p class="work__text text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-              </p>
-              <div class="work__text-box">
-                <svg class="work__icon">
-                  <use xlink:href="/src/assets/icons/sprite.svg#success" />
-                </svg>
-                <p class="work__short-text text">
-                  Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day.
-                </p>
-              </div>
-              <div class="work__text-box">
-                <svg class="work__icon">
-                  <use xlink:href="/src/assets/icons/sprite.svg#success" />
-                </svg>
-                <p class="work__short-text text">
-                  Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the
-                  digital.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="work__brand-box">
-            <svg class="work__brand">
-              <use xlink:href="/src/assets/icons/sprite.svg#studioGreen" />
-            </svg>
-            <svg class="work__brand">
-              <use xlink:href="/src/assets/icons/sprite.svg#Norto" />
-            </svg>
-            <svg class="work__brand">
-              <use xlink:href="/src/assets/icons/sprite.svg#points" />
-            </svg>
-            <svg class="work__brand">
-              <use xlink:href="/src/assets/icons/sprite.svg#OutOfTheSandBox" />
-            </svg>
-            <svg class="work__brand">
-              <use xlink:href="/src/assets/icons/sprite.svg#Brand" />
-            </svg>
-            <svg class="work__brand">
-              <use xlink:href="/src/assets/icons/sprite.svg#fortne" />
-            </svg>
-          </div>
-        </div>
-      </section>
-
-      <section class="history">
-        <div class="history__container container">
-          <div class="history__content">
-            <span class="history__subtitle second-subtitle"> Our History </span>
-            <h3 class="history__title title">Strategy for Every Stage in the Client's Journey</h3>
-          </div>
-          <div class="history__box">
-            <img class="history__pattern img" src="/src/assets/images/Pattern.png" alt="Pattern" />
-            <div
-              class="history__bg"
-              style="
-                background-image: url(/src/assets/images/historyImg2.jpeg);
-                background-image: image-set(url(/src/assets/images/historyImg2.webp) type('image/webp'));
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-              "
-            >
-              <button class="history__play-button button-reset">
-                <svg class="history__play-icon">
-                  <use xlink:href="/src/assets/icons/sprite.svg#PlayButton" />
-                </svg>
-              </button>
-            </div>
-            <svg class="history__background-green-icon">
-              <use xlink:href="/src/assets/icons/sprite.svg#GreenBackground" />
-            </svg>
-            <span class="history__background-yellow-icon"></span>
-          </div>
-        </div>
-      </section>
-
-      <section class="process">
-        <div class="process__container container">
-          <div class="contact__contact-us">
-            <span class="contact__subtitle first-subtitle"> Process </span>
-            <h3 class="contact__title title">Contact Us. It's Easy.</h3>
-            <p class="contact__text text">
-              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
-              corporate strategy foster collaborative.
-            </p>
-            <ul class="contact__list list-reset">
-              <li class="contact__item">
-                <div class="contact__icon-box">
-                  <svg class="contact__icon">
-                    <use xlink:href="/src/assets/icons/sprite.svg#phone" />
-                  </svg>
-                </div>
-                <div class="contact__contact-box">
-                  <span class="contact__small-text"> Call Today </span>
-                  <a class="contact__link" href="tel:+1800100900"> +1 800 100 900 </a>
-                </div>
-              </li>
-              <li class="contact__item">
-                <div class="contact__icon-box">
-                  <svg class="contact__icon">
-                    <use xlink:href="/src/assets/icons/sprite.svg#time" />
-                  </svg>
-                </div>
-                <div class="contact__contact-box">
-                  <span class="contact__small-text"> Monday To Friday </span>
-                  <strong class="contact__strong"> 9AM - 5PM </strong>
-                </div>
-              </li>
-              <li class="contact__item">
-                <div class="contact__icon-box">
-                  <svg class="contact__icon">
-                    <use xlink:href="/src/assets/icons/sprite.svg#location" />
-                  </svg>
-                </div>
-                <div class="contact__contact-box">
-                  <span class="contact__small-text"> USA Office </span>
-                  <strong class="contact__strong"> 195 Devonshire St Boston, MA 02110 </strong>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="process__img-box">
-            <div class="process__icon-box">
-              <picture class="process__picture">
-                <source srcset="/src/assets/images/proccessImg6.webp" type="image/webp" />
-                <img
-                  class="process__img process__img_big img"
-                  src="/src/assets/images/proccessImg6.jpeg"
-                  alt="process"
-                />
-              </picture>
-              <span class="process__icon-bg"></span>
-            </div>
-            <div class="process__small-img-box">
-              <img class="process__Pattern img" src="/src/assets/images/Pattern.png" alt="process" />
-              <picture class="process__picture">
-                <source srcset="/src/assets/images/proccessImg8.webp" type="image/webp" />
-                <img
-                  class="process__img process__img_top img"
-                  src="/src/assets/images/proccessImg8.jpeg"
-                  alt="process"
-                />
-              </picture>
-              <picture class="process__picture">
-                <source srcset="/src/assets/images/proccessImg9.webp" type="image/webp" />
-                <img
-                  class="process__img process__img_bottom img"
-                  src="/src/assets/images/proccessImg9.jpeg"
-                  alt="process"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq">
-        <div class="faq__container container">
-          <div class="faq__content">
-            <span class="faq__subtitle second-subtitle"> FAQ </span>
-            <h3 class="faq__title title">Customer Questions</h3>
-          </div>
-          <div class="accordion" data-accordion="accordion1">
-            <div class="accordion__item">
-              <button class="accordion__button button-reset small-title">
-                What will happen when I've sent my application?
-              </button>
-              <div class="accordion__collapse">
-                <div class="accordion__body">
-                  <p class="accordion__body-text text">
-                    Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
-                    on excellent productivity, customer satisfaction, respect for team and individual achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <button class="accordion__button button-reset small-title">
-                Can I get a free trial before I purchase?
-              </button>
-              <div class="accordion__collapse accordion__collapse_open">
-                <div class="accordion__body">
-                  <p class="accordion__body-text text">
-                    Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
-                    on excellent productivity, customer satisfaction, respect for team and individual achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <button class="accordion__button button-reset small-title">
-                What should I include in my personal statement?
-              </button>
-              <div class="accordion__collapse">
-                <div class="accordion__body">
-                  <p class="accordion__body-text text">
-                    Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
-                    on excellent productivity, customer satisfaction, respect for team and individual achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <button class="accordion__button button-reset small-title">
-                Will membership plans be charged automatically?
-              </button>
-              <div class="accordion__collapse">
-                <div class="accordion__body">
-                  <p class="accordion__body-text text">
-                    Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
-                    on excellent productivity, customer satisfaction, respect for team and individual achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <button class="accordion__button button-reset small-title">
-                What will happen when I've sent my application?
-              </button>
-              <div class="accordion__collapse">
-                <div class="accordion__body">
-                  <p class="accordion__body-text text">
-                    Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
-                    on excellent productivity, customer satisfaction, respect for team and individual achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <button class="accordion__button button-reset small-title">
-                Can I get a free trial before I purchase?
-              </button>
-              <div class="accordion__collapse">
-                <div class="accordion__body">
-                  <p class="accordion__body-text text">
-                    Ippsum is the result of synergy between our teams and our customers. Our company culture is focused
-                    on excellent productivity, customer satisfaction, respect for team and individual achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__wrapper">
-          <div class="footer__content">
-            <a class="footer__logo logo" href="index.html">
-              <svg class="footer__logo-icon">
-                <use xlink:href="/src/assets/icons/sprite.svg#Logo" />
-              </svg>
-              <strong class="footer__logo-text"> AskExperts </strong>
-            </a>
-            <div class="footer__socials">
-              <a class="footer__social" href="#"> Fb./ </a>
-              <a class="footer__social" href="#"> Ig./ </a>
-              <a class="footer__social" href="#"> Tw./ </a>
-              <a class="footer__social" href="#"> Be. </a>
-            </div>
-          </div>
-          <ul class="footer__list list-reset">
-            <li class="footer__item">
-              <h3 class="footer__title small-title">Product</h3>
-              <ul class="footer__sublist list-reset">
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Service </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> FAQ </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Single Service </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Get Quote </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Prices </a>
-                </li>
-              </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__sublist list-reset">
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">About</a>
             </li>
-            <li class="footer__item">
-              <h3 class="footer__title small-title">Company</h3>
-              <ul class="footer__sublist list-reset">
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> About </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> News </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Contacts </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Testimonials </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Our team </a>
-                </li>
-                <li class="footer__subitem">
-                  <a class="footer__sublink special-link" href="#"> Our approach </a>
-                </li>
-              </ul>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">News</a>
+            </li>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Contacts</a>
+            </li>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Testimonials</a>
+            </li>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Our Team</a>
+            </li>
+            <li class="footer__subitem">
+              <a class="footer__sublink" href="#">Our Approach</a>
             </li>
           </ul>
-          <div class="footer__address">
-            <h3 class="footer__title small-title">Address</h3>
-            <p class="footer__text text">1700 W Blancke St, kiyev port south USA, America</p>
-            <a class="footer__link" href="#"> Book an Appoinment </a>
-          </div>
-        </div>
-        <p class="footer__copyright text">©2022 Consultalk. All rights reserved | Terms of Service | Privacy Policy</p>
-      </div>
-    </footer>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title">Address</h3>
+          <p class="footer__text">1700 W Blancke St, kiyev port south USA, America</p>
+          <a class="footer__link" href="#">Book an Appointment</a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer__copyright">©2022 Consultalk. All rights reserved | Terms of Service | Privacy Policy</p>
+  </div>
+</footer>
 
-    <button class="theme-toggle" type="button" aria-label="Переключить тему">
-      <span class="theme-toggle__icon theme-toggle__icon_sun">☀️</span>
-      <span class="theme-toggle__icon theme-toggle__icon_moon">🌙</span>
-    </button>
+<button class="theme-toggle" type="button" aria-label="Toggle theme">
+  <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
+  <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
+</button>
 
-    <script type="module" src="/src/index.js"></script>
-  </body>
+<script type="module" src="/src/index.js"></script>
+</body>
 </html>

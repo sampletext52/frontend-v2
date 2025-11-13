@@ -18,7 +18,7 @@ class Accordion {
     this.allAccordionCollapse.forEach((collapseElement) => {
       collapseElement?.setAttribute('id', 'accordion__collapse');
       collapseElement.hidden = true;
-      collapseElement.classList.contains('accordion__collapse_open') && this.toggleSlide(collapseElement);
+      collapseElement.classList.contains('accordion__collapse--open') && this.toggleSlide(collapseElement);
     });
 
     this.allAccordionButton.forEach((buttonElement) => {
@@ -30,8 +30,8 @@ class Accordion {
   hideElement(element) {
     if (element && !element.classList.contains('collapse')) {
       element.classList.add('collapse');
-      element.classList.remove('accordion__collapse_open');
-      element.previousElementSibling.classList.remove('accordion__button_active');
+      element.classList.remove('accordion__collapse--open');
+      element.previousElementSibling.classList.remove('accordion__button--active');
       element.previousElementSibling.setAttribute('aria-expanded', 'false');
       element.style.transitionProperty = 'height, margin, padding';
       element.style.transitionDuration = this.options.speed + 'ms';
@@ -61,8 +61,8 @@ class Accordion {
   showElement(element) {
     if (element && !element.classList.contains('collapse')) {
       element.classList.add('collapse');
-      element.classList.add('accordion__collapse_open');
-      element.previousElementSibling.classList.add('accordion__button_active');
+      element.classList.add('accordion__collapse--open');
+      element.previousElementSibling.classList.add('accordion__button--active');
       element.previousElementSibling.setAttribute('aria-expanded', 'true');
       if (element.hidden) element.hidden = false;
       let height = element.offsetHeight;
@@ -101,7 +101,7 @@ class Accordion {
 
       this.toggleSlide(accordionCollapse);
 
-      if (accordionCollapse?.classList.contains('accordion__collapse_open') && this.options.turn) {
+      if (accordionCollapse?.classList.contains('accordion__collapse--open') && this.options.turn) {
         this.allAccordionCollapse.forEach((collapseElement) => this.hideElement(collapseElement));
         accordionCollapse.hidden = false;
       }

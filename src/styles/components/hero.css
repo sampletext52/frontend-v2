@@ -3,21 +3,33 @@
   align-items: center;
   justify-content: start;
   min-height: 600px;
+  background-image: url(/src/assets/images/servicesSingelBg.webp);
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.hero__subtitle {
+  width: fit-content;
+  padding: var(--subtitle-padding);
+  background-color: var(--subtitle-first-background);
+  border-radius: var(--subtitle-radius);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+
 .hero__container {
-  margin: 0;
-  max-width: 768px;
+  padding-left: 200px;
 }
 
 .hero__content {
-  margin-left: 0;
-  padding: 40px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 48px 60px;
   border-radius: 29px;
-  background-color: rgb(255 255 255 / 85%);
+  background-color: color-mix(in srgb, var(--color-white) 85%, transparent);
   transition:
     background-color 0.3s ease,
     margin-left 0.4s;
@@ -27,17 +39,16 @@
   background-color: rgb(26 26 26 / 85%);
 }
 
-.hero__subtitle {
-  margin-bottom: 20px;
+.hero__title--special {
+  color: var(--special-title-color);
+  font-weight: var(--title-font-weight);
+  line-height: 100%;
+  margin: 0;
 }
 
-.hero__title {
-  max-width: 550px;
-}
-
-@media (width >= 992px) {
-  .hero__content {
-    margin-left: 200px;
+@media (--bp-hd) {
+  .hero__title--special {
+    font-size: 50px;
   }
 }
 

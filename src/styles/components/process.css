@@ -1,79 +1,176 @@
 .process {
-  padding-bottom: 10%;
+  padding-block: 10%;
+}
+
+.process__subtitle {
+  width: fit-content;
+  padding: var(--subtitle-padding);
+  background-color: var(--subtitle-first-background);
+  border-radius: var(--subtitle-radius);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+
+.process__title {
+  margin: 0;
+  color: var(--title-color);
+  font-size: 45px;
+  font-weight: var(--title-font-weight);
 }
 
 .process__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: clamp(30px, 6vw, 60px);
+}
+
+@media (--bp-sm) {
+  .process__container {
+    max-width: 576px;
+  }
+}
+
+@media (--bp-md) {
+  .process__container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media (--bp-lg-wide) {
+  .process__container {
+    max-width: 1024px;
+  }
+}
+
+@media (--bp-xxl) {
+  .process__container {
+    max-width: 1312px;
+  }
+}
+
+.process__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(18px, 4vw, 28px);
+  max-width: 480px;
+}
+
+.process__description {
+  max-width: 415px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.process__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.process__step-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--accent-yellow-soft);
+}
+
+.process__step:nth-child(2) .process__step-icon {
+  background-color: var(--accent-green-soft);
+}
+
+.process__step:nth-child(3) .process__step-icon {
+  background-color: var(--bg-tertiary);
+}
+
+.process__icon {
+  width: 26px;
+  height: 26px;
+  fill: transparent;
+  stroke: var(--color-black);
+}
+
+[data-theme='dark'] .process__icon {
+  stroke: var(--color-white);
+}
+
+.process__step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.process__step-label {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.process__step-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.process__step-value {
+  max-width: 260px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.process__media {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  gap: 16px;
+}
+
+.process__icon-box {
+  position: relative;
 }
 
 .process__img {
   border-radius: 28px;
 }
 
-.process__content {
-  max-width: 450px;
-}
-
-.process__subtitle {
-  margin-bottom: 20px;
-}
-
-.process__title {
-  max-width: 430px;
-  margin-bottom: 40px;
-}
-
-.process__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.process__item {
-  display: flex;
-  gap: 20px;
-}
-
-.process__item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.process__icon {
-  flex-shrink: 0;
-  width: 30px;
-  height: 26px;
-}
-
-.process__text-box {
-}
-
-.process__small-title {
-}
-
-.process__text {
-}
-
-.process__img-box {
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  gap: 15px;
-}
-
-.process__img_big {
+.process__img--big {
   max-width: 300px;
 }
 
-.process__img_top,
-.process__img_bottom {
-  max-width: 320px;
+.process__gallery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.process__icon-box {
-  position: relative;
+.process__pattern {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  z-index: -1;
+  max-width: 250px;
 }
 
 .process__icon-bg {
@@ -84,25 +181,21 @@
   width: 100px;
   height: 200px;
   border-radius: 20px;
-  background-color: #4eaf4e;
+  background-color: var(--accent-green);
   transform: rotate(-90deg);
 }
 
-.process__Pattern {
-  position: absolute;
-  top: -20px;
-  right: -10px;
-  z-index: -1;
-  max-width: 250px;
+@media (--bp-md) {
+  .process__container {
+    align-items: stretch;
+  }
+
+  .process__gallery {
+    gap: 16px;
+  }
 }
 
-.process__small-img-box {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-@media (width >= 992px) {
+@media (--bp-lg) {
   .process__container {
     flex-direction: row;
     justify-content: space-between;

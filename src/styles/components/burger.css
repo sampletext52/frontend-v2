@@ -17,23 +17,23 @@
 .burger__line {
   height: var(--height-line);
   width: 100%;
-  background-color: #ffcc4a;
+  background-color: var(--accent-yellow);
   transition: transform 0.7s ease 0s;
 }
 
-.burger_active .burger__line:nth-child(1) {
+.burger--active .burger__line:nth-child(1) {
   transform: translateY(var(--center)) rotate(45deg);
 }
 
-.burger_active .burger__line:nth-child(2) {
+.burger--active .burger__line:nth-child(2) {
   transform: scaleX(0);
 }
 
-.burger_active .burger__line:nth-child(3) {
+.burger--active .burger__line:nth-child(3) {
   transform: translateY(var(--center-negative)) rotate(-45deg);
 }
 
-@media (width >= 1200px) {
+@media (--bp-xl) {
   .burger {
     display: none;
   }

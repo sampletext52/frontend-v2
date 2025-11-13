@@ -28,8 +28,8 @@ html {
 }
 
 ::selection {
-  background-color: #ffcc4a;
-  color: #181818;
+  background-color: var(--accent-yellow);
+  color: var(--color-black);
 }
 
 .button-reset {

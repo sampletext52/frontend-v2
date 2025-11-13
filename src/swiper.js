@@ -68,14 +68,14 @@ class Swiper {
 }
 
 function initSwiper() {
-  const swiperContainer = document.querySelector('.business__swiper');
+  const swiperContainer = document.querySelector('.business__slider');
   if (swiperContainer) {
-    new Swiper('.business__swiper', {
+    new Swiper('.business__slider', {
       slidesPerView: 1,
       spaceBetween: 20,
       navigation: {
-        nextEl: '.business__swiper .swiper-button-next',
-        prevEl: '.business__swiper .swiper-button-prev',
+        nextEl: '.business__nav--next',
+        prevEl: '.business__nav--prev',
       },
     });
   }

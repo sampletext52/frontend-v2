@@ -36,22 +36,22 @@
     transform 0.3s ease;
 }
 
-.theme-toggle__icon_sun {
+.theme-toggle__icon--sun {
   opacity: 1;
   transform: rotate(0deg);
 }
 
-.theme-toggle__icon_moon {
+.theme-toggle__icon--moon {
   opacity: 0;
   transform: rotate(180deg);
 }
 
-[data-theme='dark'] .theme-toggle__icon_sun {
+[data-theme='dark'] .theme-toggle__icon--sun {
   opacity: 0;
   transform: rotate(180deg);
 }
 
-[data-theme='dark'] .theme-toggle__icon_moon {
+[data-theme='dark'] .theme-toggle__icon--moon {
   opacity: 1;
   transform: rotate(0deg);
 }

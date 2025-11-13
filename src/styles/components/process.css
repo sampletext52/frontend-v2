@@ -45,7 +45,7 @@
 
 @media (--bp-lg-wide) {
   .process__container {
-    max-width: 1024px;
+    max-width: 975px;
   }
 }
 
@@ -144,6 +144,11 @@
   isolation: isolate;
   display: flex;
   gap: 16px;
+  background-image: url('/src/assets/images/processGalery.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
 }
 
 .process__icon-box {

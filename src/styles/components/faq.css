@@ -38,6 +38,8 @@
 @media (--bp-lg-wide) {
   .faq__container {
     max-width: 1024px;
+    border-radius: 0;
+    padding: 60px 0;
   }
 }
 

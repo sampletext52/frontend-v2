@@ -30,26 +30,6 @@
   font-weight: var(--title-font-weight);
 }
 
-/*@media (--bp-sm) {*/
-/*  .faq__container {*/
-/*    max-width: 576px;*/
-/*  }*/
-/*}*/
-
-/*@media (--bp-lg-wide) {*/
-/*  .faq__container {*/
-/*    max-width: 1024px;*/
-/*    border-radius: 0;*/
-/*    padding: 60px 0;*/
-/*  }*/
-/*}*/
-
-/*@media (--bp-xxl) {*/
-/*  .faq__container {*/
-/*    max-width: 1312px;*/
-/*  }*/
-/*}*/
-
 .faq__content {
   display: flex;
   flex-direction: column;

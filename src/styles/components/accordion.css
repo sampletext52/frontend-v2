@@ -61,13 +61,6 @@
   margin: 0;
 }
 
-@media (--bp-sm) {
-  .accordion__button::after,
-  .accordion__button::before {
-    right: 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .accordion__button {
     font-size: 14px;

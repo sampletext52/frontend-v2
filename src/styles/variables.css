@@ -1,11 +1,3 @@
-@custom-media --bp-sm (width >= 576px);
-@custom-media --bp-md (width >= 768px);
-@custom-media --bp-lg (width >= 992px);
-@custom-media --bp-lg-wide (width >= 1024px);
-@custom-media --bp-xl (width >= 1200px);
-@custom-media --bp-xxl (width >= 1312px);
-@custom-media --bp-hd (width >= 1920px);
-
 :root {
   --color-white: #ffffff;
   --color-black: #181818;

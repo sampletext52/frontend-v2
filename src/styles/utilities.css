@@ -182,37 +182,6 @@
   overscroll-behavior: none;
 }
 
-@media (--bp-hd) {
-  .title {
-    font-size: 45px;
-  }
-}
-
-@media (--bp-sm) {
-  .container {
-    max-width: 576px;
-  }
-}
-
-@media (--bp-md) {
-  .container {
-    max-width: 768px;
-    padding: 0 16px;
-  }
-}
-
-@media (--bp-lg-wide) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (--bp-xxl) {
-  .container {
-    max-width: 1312px;
-  }
-}
-
 @media screen and (max-width: 1440px) {
   .main {
     padding-bottom: 0;

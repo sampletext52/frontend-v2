@@ -2,12 +2,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-xl);
 }
 
 .accordion__item {
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: var(--spacing-2xl);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -20,16 +20,16 @@
   padding: 0;
   cursor: pointer;
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--font-size-lg);
 }
 
 .accordion__button::before,
 .accordion__button::after {
   content: '';
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 20px;
+  right: var(--spacing-md);
+  top: var(--spacing-md);
+  width: var(--size-icon-xs);
   height: 3px;
   background-color: var(--text-primary);
   transition: transform 0.4s;
@@ -53,20 +53,20 @@
 }
 
 .accordion__body {
-  padding-top: 20px;
+  padding-top: var(--spacing-xl);
 }
 
 .accordion__body-text {
-  max-width: 600px;
+  max-width: var(--max-width-content-7xl);
   margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .accordion__button {
-    font-size: 14px;
+    font-size: var(--font-size-xs);
   }
   .accordion__body-text {
-    font-size: 14px;
+    font-size: var(--font-size-xs);
   }
 }
 

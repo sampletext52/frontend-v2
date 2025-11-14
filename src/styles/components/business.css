@@ -7,8 +7,8 @@
 .business__container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
-  max-width: 1312px;
+  padding: 0 var(--spacing-7xl);
+  max-width: var(--max-width-container);
 }
 
 .business__icon {
@@ -27,9 +27,9 @@
 .business__nav {
   display: flex;
   position: static;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
+  width: var(--size-icon-2xl);
+  height: var(--size-icon-2xl);
+  border-radius: var(--radius-full);
   background-color: var(--accent-yellow-strong);
   transition: background-color 0.4s;
   justify-content: center;
@@ -49,7 +49,7 @@
 .business__nav::after {
   content: '➜';
   color: var(--color-black);
-  font-size: 20px;
+  font-size: var(--font-size-lg);
   transition: color 0.4s;
 }
 
@@ -60,21 +60,21 @@
 .business__box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
+  gap: var(--spacing-xl);
+  max-width: var(--max-width-content-7xl);
 }
 
 .business__navigation-box {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
-  padding: 15px;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-lg);
 }
 
 .business__list {
   display: flex;
   overflow-x: auto;
-  gap: 40px;
+  gap: var(--spacing-4xl);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -83,9 +83,9 @@
 .business__item {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 35px 25px;
-  border-radius: 20px;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-3xl) var(--spacing-2xl);
+  border-radius: var(--radius-sm);
   background-color: var(--bg-tertiary);
   transition: background-color 0.4s, color 0.4s;
   min-width: 345px;
@@ -111,7 +111,7 @@
 
 .business__item .business__icon {
   width: 35px;
-  height: 25px;
+  height: var(--size-icon-sm);
   fill: var(--text-primary);
   transition: fill 0.4s;
 }
@@ -136,18 +136,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: var(--spacing-4xl);
   transition: gap 0.4s;
 }
 
 @media screen and (max-width: 1024px) {
   .business__container {
-    padding: 0 30px;
+    padding: 0 var(--spacing-3xl);
   }
 }
 
 @media screen and (max-width: 768px) {
   .business__container {
-    padding: 0 12px;
+    padding: 0 var(--spacing-base);
   }
 }

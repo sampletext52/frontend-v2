@@ -10,12 +10,7 @@
   --accent-yellow: #ffcc4a;
   --accent-yellow-strong: #ffc42b;
   --accent-yellow-soft: #ffecbb;
-  --accent-yellow-dark: #deaa27;
   --accent-green-soft: #a4eda4;
-  --color-graphite: #303030;
-  --color-graphite-light: #3e3e3e;
-  --color-graphite-border: #565656;
-  --outline-muted: #d6d6d6;
 
   --special-link-color: var(--color-white);
   --special-link-font-weight: 400;
@@ -44,10 +39,109 @@
   --bg-tertiary: var(--color-gray-100);
   --text-primary: var(--color-black);
   --text-secondary: #595566;
-  --text-muted: #6c757d;
   --border-color: var(--color-gray-200);
   --shadow: var(--shadow-soft);
   --overlay: var(--color-overlay);
+
+  /* Header colors */
+  --header-bg: rgb(27 27 27 / 91%);
+  --header-bg-dark: rgb(26 26 26 / 95%);
+  --header-hero-bg-dark: rgb(26 26 26 / 85%);
+  
+  /* Additional colors */
+  --phone-link-color: #353535;
+  --nav-dot-border: rgb(81 81 81);
+  --black-border: rgb(24 24 24);
+  --history-overlay: rgb(24 24 24 / 40%);
+  --work-brand-fill: rgb(3 2 17 / 50%);
+  
+  /* Font sizes */
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-base: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 45px;
+  --font-size-3xl: 50px;
+  
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 8px;
+  --spacing-md: 10px;
+  --spacing-base: 12px;
+  --spacing-lg: 15px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 25px;
+  --spacing-3xl: 30px;
+  --spacing-4xl: 40px;
+  --spacing-5xl: 45px;
+  --spacing-6xl: 50px;
+  --spacing-7xl: 60px;
+  --spacing-8xl: 80px;
+  --spacing-9xl: 100px;
+  --spacing-10xl: 120px;
+  --spacing-11xl: 150px;
+  
+  /* Sizes */
+  --size-icon-xs: 20px;
+  --size-icon-sm: 25px;
+  --size-icon-md: 30px;
+  --size-icon-lg: 40px;
+  --size-icon-xl: 50px;
+  --size-icon-2xl: 65px;
+  --size-logo: 30px;
+  --size-burger: 30px;
+  --size-phone-icon: 40px;
+  --size-nav-icon: 40px;
+  --size-theme-toggle: 50px;
+  --size-step-icon: 64px;
+  --size-brand: 100px;
+  --size-history-yellow-width: 164px;
+  --size-history-yellow-height: 183px;
+  --size-process-icon-bg-width: 100px;
+  --size-process-icon-bg-height: 200px;
+  
+  /* Border radius */
+  --radius-sm: 20px;
+  --radius-md: 29px;
+  --radius-lg: 30px;
+  --radius-xl: 42px;
+  --radius-full: 50%;
+  
+  /* Max widths */
+  --max-width-container: 1312px;
+  --max-width-content-sm: 230px;
+  --max-width-content-md: 260px;
+  --max-width-content-lg: 280px;
+  --max-width-content-xl: 300px;
+  --max-width-content-2xl: 400px;
+  --max-width-content-3xl: 415px;
+  --max-width-content-4xl: 450px;
+  --max-width-content-5xl: 480px;
+  --max-width-content-6xl: 520px;
+  --max-width-content-7xl: 600px;
+  --max-width-content-8xl: 725px;
+  --max-width-content-9xl: 975px;
+  --max-width-content-10xl: 1200px;
+  
+  /* Letter spacing */
+  --letter-spacing-sm: 1px;
+  --letter-spacing-md: 3px;
+  
+  /* Line heights */
+  --line-height-base: 24px;
+  
+  /* Blur */
+  --blur-md: 21px;
+  
+  /* Z-index */
+  --z-header: 9;
+  --z-burger: 10;
+  --z-overlay: 1;
+  --z-content: 2;
+  --z-pattern: -1;
+  --z-pattern-bg: -2;
+  --z-theme-toggle: 1000;
 }
 
 [data-theme='dark'] {
@@ -58,11 +152,6 @@
   --color-gray-200: #404040;
   --color-overlay: rgb(0 0 0 / 70%);
   --shadow-soft: rgb(0 0 0 / 30%);
-  --accent-yellow-dark: #deaa27;
-  --color-graphite: #2f2f2f;
-  --color-graphite-light: #3a3a3a;
-  --color-graphite-border: #565656;
-  --outline-muted: #5a5a5a;
 
   --special-link-color: var(--color-white);
   --special-link-font-weight: 400;
@@ -91,8 +180,19 @@
   --bg-tertiary: #404040;
   --text-primary: var(--color-white);
   --text-secondary: #b0b0b0;
-  --text-muted: #888888;
   --border-color: #404040;
   --shadow: var(--shadow-soft);
   --overlay: var(--color-overlay);
+
+  /* Header colors */
+  --header-bg: rgb(26 26 26 / 95%);
+  --header-bg-dark: rgb(26 26 26 / 95%);
+  --header-hero-bg-dark: rgb(26 26 26 / 85%);
+  
+  /* Additional colors */
+  --phone-link-color: #b0b0b0;
+  --nav-dot-border: #5a5a5a;
+  --black-border: var(--color-black);
+  --history-overlay: rgb(24 24 24 / 40%);
+  --work-brand-fill: rgb(255 255 255 / 50%);
 }

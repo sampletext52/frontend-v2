@@ -8,14 +8,14 @@
   background-color: var(--subtitle-first-background);
   border-radius: var(--subtitle-radius);
   text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 24px;
+  letter-spacing: var(--letter-spacing-md);
+  line-height: var(--line-height-base);
 }
 
 .work__title {
   margin: 0;
   color: var(--title-color);
-  font-size: 45px;
+  font-size: var(--font-size-2xl);
   font-weight: var(--title-font-weight);
 }
 
@@ -42,10 +42,10 @@
 .work__wrapper {
   width: 100%;
   margin: 0 auto;
-  padding: 0 12px;
-  max-width: 1312px;
+  padding: 0 var(--spacing-base);
+  max-width: var(--max-width-container);
   display: flex;
-  gap: 60px;
+  gap: var(--spacing-7xl);
   flex-direction: row;
   justify-content: space-between;
 }
@@ -63,55 +63,55 @@
 .work__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 480px;
+  gap: var(--spacing-xl);
+  max-width: var(--max-width-content-5xl);
 }
 
 .work__text-box {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: var(--spacing-md);
 }
 
 .work__icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: var(--size-icon-xs);
+  height: var(--size-icon-xs);
 }
 
 .work__brand-box {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  padding: 0 15px;
+  gap: var(--spacing-xl);
+  padding: 0 var(--spacing-lg);
   overflow-x: auto;
 }
 
 .work__brand {
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  fill: rgb(3 2 17 / 50%);
+  width: var(--size-brand);
+  height: var(--size-brand);
+  fill: var(--work-brand-fill);
 }
 
 @media screen and (max-width: 1440px) {
   .work__container {
-    padding: 0 60px;
+    padding: 0 var(--spacing-7xl);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .work__container {
-    padding: 0 30px;
+    padding: 0 var(--spacing-3xl);
   }
 }
 
 @media screen and (max-width: 768px) {
   .work__title {
-    font-size: 30px;
+    font-size: var(--font-size-xl);
   }
   .work__container {
-    padding: 0 12px;
+    padding: 0 var(--spacing-base);
   }
   .work__picture {
     display: none;

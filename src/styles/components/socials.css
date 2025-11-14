@@ -4,22 +4,22 @@
 
 .socials__icon {
   fill: var(--color-white);
-  width: 27px;
-  height: 25px;
+  width: var(--size-icon-sm);
+  height: var(--size-icon-sm);
 }
 
 .socials__link {
   text-decoration: none;
-  font-size: 20px;
+  font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--color-white);
 }
 
 .socials--header {
-  gap: 25px;
+  gap: var(--spacing-2xl);
 }
 
 .socials--footer {
-  gap: 20px;
+  gap: var(--spacing-xl);
 }
 

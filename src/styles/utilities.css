@@ -1,28 +1,28 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 var(--spacing-base);
   max-width: 100%;
 }
 
 .main {
-  padding-bottom: 150px;
+  padding-bottom: var(--spacing-11xl);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing-md);
   text-decoration: none;
   font-family: Cabin, sans-serif;
-  font-size: 30px;
+  font-size: var(--font-size-xl);
   font-weight: 600;
   color: var(--color-white);
 }
 
 .logo__icon {
-  width: 30px;
-  height: 30px;
+  width: var(--size-logo);
+  height: var(--size-logo);
 }
 
 .logo__text {
@@ -32,7 +32,7 @@
 .title {
   margin: 0;
   color: var(--title-color);
-  font-size: calc(30px + (45 - 30) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(var(--font-size-xl) + (var(--font-size-2xl) - var(--font-size-xl)) * ((100vw - 320px) / (1920 - 320)));
   font-weight: var(--title-font-weight);
   line-height: 100%;
 }
@@ -40,7 +40,7 @@
 .small-title {
   color: var(--title-color);
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--font-size-lg);
 }
 
 .text {
@@ -51,15 +51,15 @@
 }
 
 .black-link {
-  padding: 15px 30px;
+  padding: var(--spacing-lg) var(--spacing-3xl);
   text-decoration: none;
   color: var(--button-first-color);
   background-color: var(--button-first-background);
   border-radius: var(--button-radius);
   font:
-    var(--button-font-weight) 18px Lato,
+    var(--button-font-weight) var(--font-size-base) Lato,
     sans-serif;
-  border: 2px solid rgb(24 24 24);
+  border: 2px solid var(--black-border);
   transition:
     background-color 0.4s,
     color 0.4s;
@@ -71,13 +71,13 @@
 }
 
 .yellow-link {
-  padding: 15px 45px;
+  padding: var(--spacing-lg) var(--spacing-5xl);
   text-decoration: none;
   color: var(--button-second-color);
   background-color: var(--button-second-background);
   border-radius: var(--button-radius);
   font:
-    var(--button-font-weight) 18px Lato,
+    var(--button-font-weight) var(--font-size-base) Lato,
     sans-serif;
   transition:
     background-color 0.4s,
@@ -90,22 +90,22 @@
 }
 
 .black-button {
-  padding: 15px 30px;
+  padding: var(--spacing-lg) var(--spacing-3xl);
   color: var(--button-first-color);
   background-color: var(--button-first-background);
   border-radius: var(--button-radius);
   font:
-    var(--button-font-weight) 18px Lato,
+    var(--button-font-weight) var(--font-size-base) Lato,
     sans-serif;
 }
 
 .yellow-button {
-  padding: 15px 45px;
+  padding: var(--spacing-lg) var(--spacing-5xl);
   color: var(--button-second-color);
   background-color: var(--button-second-background);
   border-radius: var(--button-radius);
   font:
-    var(--button-font-weight) 18px Lato,
+    var(--button-font-weight) var(--font-size-base) Lato,
     sans-serif;
 }
 
@@ -113,20 +113,20 @@
   text-decoration: none;
   color: var(--special-link-color);
   font:
-    var(--special-link-font-weight) 18px Lato,
+    var(--special-link-font-weight) var(--font-size-base) Lato,
     sans-serif;
 }
 
 .special-link::before {
   content: '';
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
+  width: var(--spacing-sm);
+  height: var(--spacing-sm);
+  margin-right: var(--spacing-sm);
   vertical-align: middle;
-  border: 0.98px solid rgb(81 81 81);
+  border: 0.98px solid var(--nav-dot-border);
   background-color: transparent;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
 }
 
 .first-subtitle {
@@ -139,7 +139,7 @@
     var(--subtitle-font-weight) Lato,
     sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: var(--letter-spacing-sm);
 }
 
 .second-subtitle {
@@ -152,11 +152,11 @@
     var(--subtitle-font-weight) Lato,
     sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: var(--letter-spacing-sm);
 }
 
 .social-icon {
-  width: 27px;
+  width: var(--size-icon-sm);
   height: var(--social-icon);
 }
 

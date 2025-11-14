@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: var(--spacing-xl);
   height: 100%;
   flex-direction: row;
   padding: 0;
@@ -16,44 +16,44 @@
   text-decoration: none;
   text-transform: capitalize;
   color: var(--special-link-color);
-  font: var(--special-link-font-weight) 18px Lato, sans-serif;
+  font: var(--special-link-font-weight) var(--font-size-base) Lato, sans-serif;
 }
 
 .nav__link::before {
   content: '';
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
+  width: var(--spacing-sm);
+  height: var(--spacing-sm);
+  margin-right: var(--spacing-sm);
   vertical-align: middle;
-  border: 0.98px solid rgb(81 81 81);
+  border: 0.98px solid var(--nav-dot-border);
   background-color: transparent;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
 }
 
 .nav__item--phone {
   display: flex;
   align-items: center;
-  padding: 8px 40px 8px 10px;
+  padding: var(--spacing-sm) var(--spacing-4xl) var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-white);
-  border-radius: 42px;
+  border-radius: var(--radius-xl);
 }
 
 .nav__icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  padding: 10px;
-  border-radius: 50%;
+  width: var(--size-nav-icon);
+  height: var(--size-nav-icon);
+  margin-right: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-full);
   background-color: var(--accent-yellow-strong);
 }
 
 .nav__phone-icon {
-  width: 30px;
-  height: 30px;
+  width: var(--size-icon-md);
+  height: var(--size-icon-md);
   fill: transparent;
   stroke: var(--color-black);
 }
@@ -61,7 +61,7 @@
 .nav__phone-link {
   text-decoration: none;
   font-family: Lato, sans-serif;
-  font-size: 18px;
+  font-size: var(--font-size-base);
   font-weight: 600;
   color: var(--text-secondary);
 }

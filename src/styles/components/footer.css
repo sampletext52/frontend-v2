@@ -102,7 +102,7 @@
   height: var(--spacing-sm);
   margin-right: var(--spacing-sm);
   vertical-align: middle;
-  border: 0.98px solid var(--nav-dot-border);
+  border: 1px solid var(--nav-dot-border);
   background-color: var(--color-white);
   border-radius: var(--radius-full);
 }

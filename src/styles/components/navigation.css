@@ -1,29 +1,15 @@
-.nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: -100rem;
-  z-index: 1;
-  height: calc(100vh - 100px);
-  background-color: var(--bg-primary);
-  transition:
-    top 1s,
-    background-color 0.3s ease;
-  overflow: auto;
-}
-
 .nav--active {
   top: 0;
 }
 
 .nav__list {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
   height: 100%;
-  padding: 20px;
+  flex-direction: row;
+  padding: 0;
 }
 
 .nav__link {
@@ -86,21 +72,4 @@
 
 .nav__link--active::before {
   background-color: var(--accent-green);
-}
-
-@media (--bp-xl) {
-  .nav {
-    position: static;
-    height: 0;
-    overflow: visible;
-  }
-
-  .nav__list {
-    flex-direction: row;
-    padding: 0;
-  }
-
-  .nav__item--phone {
-    margin-left: 100px;
-  }
 }

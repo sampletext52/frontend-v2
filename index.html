@@ -10,8 +10,8 @@
 
 <body class="page__body">
 <header class="header">
-  <div class="header__contact-box">
-    <div class="header__time-box">
+  <div class="header__contact">
+    <div class="header__time">
       <svg class="header__icon">
         <use xlink:href="/src/assets/icons/sprite.svg#time" />
       </svg>
@@ -23,7 +23,7 @@
       </svg>
       <span class="header__text">725 Park Ave, New York</span>
     </div>
-    <div class="socials socials--header">
+    <div class="header__socials">
       <a class="socials__link" href="#">
         <svg class="socials__icon">
           <use xlink:href="/src/assets/icons/sprite.svg#Instagram" />
@@ -46,15 +46,15 @@
       </a>
     </div>
   </div>
-  <div class="header__container">
+  <div class="header__main">
     <a class="logo" href="index.html">
       <svg class="logo__icon">
         <use xlink:href="/src/assets/icons/sprite.svg#Logo" />
       </svg>
       <strong class="logo__text">AskExperts</strong>
     </a>
-    <nav class="nav">
-      <ul class="nav__list list-reset">
+    <nav class="nav header__nav">
+      <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Home</a>
         </li>
@@ -62,7 +62,7 @@
           <a class="nav__link" href="#">About</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--active" href="#">Services</a>
+          <a class="nav__link nav__link_active" href="#">Services</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">Our Team</a>
@@ -73,23 +73,21 @@
         <li class="nav__item">
           <a class="nav__link" href="#">Contact</a>
         </li>
-        <li class="nav__item nav__item--phone">
-          <div class="nav__icon-box">
-            <svg class="nav__phone-icon">
-              <use xlink:href="/src/assets/icons/sprite.svg#phone" />
-            </svg>
-          </div>
-          <a class="nav__phone-link" href="tel:+8884521505">+ (888) 452 1505</a>
-        </li>
       </ul>
     </nav>
-    <button class="burger button-reset" type="button" aria-label="Toggle menu">
+    <div class="header__phone phone">
+      <div class="phone__icon"></div>
+      <a class="phone__link" href="tel:+8884521505">+ (888) 452 1505</a>
+    </div>
+
+    <button class="header__burger burger" type="button" aria-label="Toggle menu">
       <span class="burger__line"></span>
       <span class="burger__line"></span>
       <span class="burger__line"></span>
     </button>
   </div>
 </header>
+
 
 <main class="main">
   <section class="hero">

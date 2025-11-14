@@ -40,24 +40,27 @@
 }
 
 .hero__title--special {
+  font-size: 50px;
   color: var(--special-title-color);
   font-weight: var(--title-font-weight);
   line-height: 100%;
   margin: 0;
 }
 
-@media (--bp-hd) {
+@media screen and (max-width: 1024px) {
   .hero__title--special {
-    font-size: 50px;
+    font-size: 30px;
+  }
+  .hero__container {
+    padding: 0;
+  }
+  .hero {
+    justify-content: center;
   }
 }
 
-@media (width < 576px) {
+@media screen and (max-width: 768px) {
   .hero {
     min-height: 420px;
-  }
-
-  .hero__content {
-    padding: 24px 20px;
   }
 }

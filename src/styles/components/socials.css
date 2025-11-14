@@ -15,7 +15,6 @@
   color: var(--color-white);
 }
 
-/* Модификаторы для использования в разных блоках */
 .socials--header {
   gap: 25px;
 }

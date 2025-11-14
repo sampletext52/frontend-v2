@@ -68,3 +68,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .accordion__button {
+    font-size: 14px;
+  }
+  .accordion__body-text {
+    font-size: 14px;
+  }
+}
+

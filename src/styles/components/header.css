@@ -1,13 +1,18 @@
 .header {
-  position: relative;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
   backdrop-filter: blur(21px);
   background-color: rgb(27 27 27 / 91%);
-  transition: background-color 0.3s ease;
 }
 
 [data-theme='dark'] .header {
   background-color: rgb(26 26 26 / 95%);
+}
+
+.header__time, .header__address {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .header::after {
@@ -18,26 +23,25 @@
   display: block;
   background-color: var(--color-black);
   transition: background-color 0.3s ease;
+  display: none;
 }
 
 [data-theme='dark'] .header::after {
   background-color: var(--color-black);
 }
 
-.header__container {
+.header__main {
   width: 100%;
   margin: 0 auto;
-  padding: 30px 12px;
-  max-width: 100%;
+  padding: 30px 30px;
+  max-width: 1312px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__contact-box {
-  position: relative;
+.header__contact {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 15px;
@@ -45,11 +49,13 @@
   background-color: var(--color-black);
 }
 
-.header__time-box {
+.nav__list {
+  list-style: none;
+}
+
+.header__socials {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
+  gap: 25px;
 }
 
 .header__icon {
@@ -59,51 +65,57 @@
   stroke: var(--accent-yellow);
 }
 
-.header__address {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .header__text {
   font-family: Lato, sans-serif;
   font-weight: 400;
   color: var(--color-white);
 }
 
-@media (--bp-sm) {
-  .header__container {
-    max-width: 576px;
-  }
+.header__phone .phone__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ffc42b;
+  background-image: url('/src/assets/icons/phone.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (--bp-md) {
-  .header__container {
-    max-width: 768px;
-    padding: 30px 16px;
-  }
+.header__phone {
+  display: flex;
+  align-items: center;
+  padding: 8px 40px 8px 10px;
+  background-color: #fff;
+  border-radius: 42px;
 }
 
-@media (--bp-lg-wide) {
-  .header__container {
-    max-width: 1024px;
-  }
+.phone__link {
+  text-decoration: none;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #353535;
 }
 
-@media (--bp-xxl) {
-  .header__container {
-    max-width: 1312px;
-  }
-}
-
-@media (--bp-xl) {
-  .header::after {
+@media screen and (max-width: 1024px) {
+  .header__contact {
     display: none;
   }
-}
-
-@media (width <= 1200px) {
-  .header__contact-box {
+  .logo {
     display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__main {
+    justify-content: end;
   }
 }

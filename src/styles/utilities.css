@@ -205,13 +205,16 @@
   .container {
     max-width: 1024px;
   }
-  .main {
-    padding-bottom: 0;
-  }
 }
 
 @media (--bp-xxl) {
   .container {
     max-width: 1312px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main {
+    padding-bottom: 0;
   }
 }

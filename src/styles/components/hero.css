@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: start;
   min-height: 600px;
-  background-image: url(/src/assets/images/servicesSingelBg.webp);
+  background-image: url('/src/assets/images/servicesSingelBg.webp');
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,13 +47,15 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .hero__title--special {
     font-size: var(--font-size-xl);
   }
+
   .hero__container {
     padding: 0;
   }
+
   .hero {
     justify-content: center;
   }

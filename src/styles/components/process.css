@@ -161,25 +161,25 @@
   transform: rotate(-90deg);
 }
 
-@media screen and (max-width: 1440px) {
-    .process__container {
-      max-width: var(--max-width-content-9xl);
-    }
+@media screen and (width <= 1440px) {
+  .process__container {
+    max-width: var(--max-width-content-9xl);
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .process__container {
     max-width: 768px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .process__title {
     font-size: var(--font-size-xl);
   }
 }
 
-@media screen and (max-width: 672px) {
+@media screen and (width <= 672px) {
   .process__media {
     display: none;
   }

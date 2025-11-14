@@ -94,25 +94,27 @@
   fill: var(--work-brand-fill);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (width <= 1440px) {
   .work__container {
     padding: 0 var(--spacing-7xl);
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .work__container {
     padding: 0 var(--spacing-3xl);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .work__title {
     font-size: var(--font-size-xl);
   }
+
   .work__container {
     padding: 0 var(--spacing-base);
   }
+
   .work__picture {
     display: none;
   }

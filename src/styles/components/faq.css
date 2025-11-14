@@ -42,7 +42,7 @@
   max-width: var(--max-width-content-8xl);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (width <= 1440px) {
   .faq__container {
     max-width: 100%;
     border-radius: 0;
@@ -50,10 +50,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .faq__accordion {
     padding: 0 var(--spacing-lg);
   }
+
   .faq__title {
     font-size: var(--font-size-xl);
   }

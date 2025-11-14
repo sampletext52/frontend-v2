@@ -12,7 +12,6 @@
   width: var(--width);
   height: var(--height);
   display: none;
-
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -38,7 +37,7 @@
   transform: translateY(var(--center-negative)) rotate(-45deg);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .burger {
     display: inline-flex;
   }

@@ -16,7 +16,9 @@
   text-decoration: none;
   text-transform: capitalize;
   color: var(--special-link-color);
-  font: var(--special-link-font-weight) var(--font-size-base) Lato, sans-serif;
+  font:
+    var(--special-link-font-weight) var(--font-size-base) Lato,
+    sans-serif;
 }
 
 .nav__link::before {

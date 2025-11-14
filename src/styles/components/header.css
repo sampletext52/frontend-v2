@@ -9,7 +9,8 @@
   background-color: var(--header-bg-dark);
 }
 
-.header__time, .header__address {
+.header__time,
+.header__address {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
@@ -20,7 +21,6 @@
   position: absolute;
   inset: 0;
   z-index: var(--z-header);
-  display: block;
   background-color: var(--color-black);
   transition: background-color 0.3s ease;
   display: none;
@@ -102,19 +102,23 @@
   color: var(--phone-link-color);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .header__contact {
     display: none;
   }
+
   .logo {
     display: none;
   }
+
   .header__nav {
     display: none;
   }
+
   .header__phone {
     display: none;
   }
+
   .header__main {
     justify-content: end;
   }
